@@ -206,7 +206,7 @@
     enable = true;
     layout = "uk"; # Adjust to your keyboard layout
     displayManager.sddm.enable = true;
-    desktopManager.plasma5 = {
+    desktopManager.plasma6 = {
       enable = true;
       wayland = true;
     };
