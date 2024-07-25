@@ -79,7 +79,7 @@
     # Randomise page allocation
     "page_alloc.shuffle=1"
 
-    # Panic on uncorrectable memory access (mostly useful for systems with ECC memory)
+    # Panic on uncorrectable memory access (mostly useful for systems with ECC memory) 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
     "mce=0"
 
     # Randomise kernel stack offset
