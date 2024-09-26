@@ -220,7 +220,7 @@
     uefitool
     uefisettings
     uefi-firmware-parser
-    ed2k-uefi-shell
+    edk2-uefi-shell
     sbsigntool
     fiano
     efitools
