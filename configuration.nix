@@ -198,7 +198,7 @@
   services.clamav.daemon.enable = true;
   services.clamav.updater.enable = true;
 
-  services.sshd.enable = false;
+  services.sshd.enable = lib.mkForce false;
 
   services.fail2ban.enable = true;
 
