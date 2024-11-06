@@ -4,20 +4,20 @@
 
 { config, pkgs, ... }:
 
-#let
-#  pkgs2 = import <nixpkgs> {};
-#  nix-mineral = pkgs2.fetchgit {
-#    url = "https://github.com/cynicsketch/nix-mineral.git";
-#    rev = "refs/tags/v0.1.6-alpha";
+let
+  pkgs2 = import <nixpkgs> {};
+  nix-mineral = pkgs2.fetchgit {
+    url = "https://github.com/imami777/nix-mineral.git";
+    rev = "refs/tags/v0.1.6-alpha-custom";
     #ref = "HEAD";
-#    sha256 = "3RnP8mfFhV+hOfkTk35zd1nYiUliaoGw0VFq9pd9ykM=";
-#  };
-#in
+    sha256 = "3RnP8mfFhV+hOfkTk35zd1nYiUliaoGw0VFq9pd9ykM=";
+  };
+in
 {
   imports = [
-    #"${nix-mineral}/nix-mineral.nix"
+    "${nix-mineral}/nix-mineral.nix"
     #./security.nix
-    ./nix-mineral.nix
+    #./nix-mineral.nix
     <nixos-hardware/asus/zephyrus/gu605my>
     ./hardware-configuration.nix
     ./opensnitch.nix
